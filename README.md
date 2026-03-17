@@ -24,9 +24,6 @@ A machine learning regression pipeline that predicts second-hand vehicle prices 
 └── README.md
 ```
 
-**Why separate model notebooks?** — Eren and Aybars work on different model notebooks independently, which avoids merge conflicts and makes debugging easier.
-
----
 
 ## Getting Started
 
@@ -34,7 +31,7 @@ A machine learning regression pipeline that predicts second-hand vehicle prices 
 
 ```bash
 git clone <repo-url>
-git checkout acar
+
 ```
 
 ### 2. Download the dataset
