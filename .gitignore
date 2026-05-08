@@ -209,8 +209,13 @@ __marimo__/
 # Project specific
 *.csv
 models/*.pkl
+models/.sklearn_cache/
 .DS_Store
 .cursor/
 .claude/
 CLAUDE.md
 CLAUDE.local.md
+
+# SLURM logs — keep folder tracked, ignore the contents
+logs/*
+!logs/.gitkeep
