@@ -4,9 +4,8 @@ Shared utilities for the ENGR422 used vehicle prices project.
 Imported by notebooks 03a, 03c, and 04. (03b was implemented before this
 module existed; refactor in passing if you touch it for another reason.)
 
-Lives next to ``preprocessing.py`` so notebooks can do
-``from utils import ...`` the same way they already do
-``from preprocessing import ...``.
+Notebooks need ``sys.path.insert(0, "../src")`` before
+``from utils import ...`` so Python can find this file.
 """
 
 from __future__ import annotations
@@ -22,8 +21,10 @@ from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 # Paths and project-wide constants
 # ---------------------------------------------------------------------------
 
-DATA_DIR = Path("../data")
-MODELS_DIR = Path("../models")
+# Anchor to the project root so paths work regardless of the caller's CWD.
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DATA_DIR = PROJECT_ROOT / "data"
+MODELS_DIR = PROJECT_ROOT / "models"
 RANDOM_STATE = 42
 
 
