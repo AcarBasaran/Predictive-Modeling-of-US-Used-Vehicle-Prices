@@ -212,3 +212,6 @@ data/
 models/*.pkl
 .DS_Store
 .cursor/
+.claude/
+CLAUDE.md
+CLAUDE.local.md
