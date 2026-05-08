@@ -1,12 +1,12 @@
 #!/bin/bash
-#SBATCH --job-name=03a_linreg
+#SBATCH --job-name=01_eda
 #SBATCH --partition=ai
 #SBATCH --qos=ai
 #SBATCH --account=ai
-#SBATCH --output=logs/03a_%j.out
-#SBATCH --error=logs/03a_%j.err
+#SBATCH --output=logs/01_eda_%j.out
+#SBATCH --error=logs/01_eda_%j.err
 #SBATCH --time=00:30:00
-#SBATCH --cpus-per-task=8
+#SBATCH --cpus-per-task=4
 #SBATCH --mem=16G
 
 # Dedicated project env (Python 3.11 + sklearn 1.8 / xgboost / seaborn / nbconvert).
@@ -22,10 +22,10 @@ mkdir -p logs
 
 cd "${SLURM_SUBMIT_DIR:-$(pwd)}"
 
-# data/ is gitignored. Make sure these CSVs are present before submitting.
-ls -lh data/X_train.csv data/X_test.csv data/y_train.csv data/y_test.csv
+# Required input
+ls -lh data/vehicles.csv
 
 jupyter nbconvert --to notebook --execute --inplace \
-    notebooks/03a_baseline_linear_regression.ipynb \
+    notebooks/01_eda.ipynb \
     --ExecutePreprocessor.timeout=1800 \
     --ExecutePreprocessor.kernel_name=python3
