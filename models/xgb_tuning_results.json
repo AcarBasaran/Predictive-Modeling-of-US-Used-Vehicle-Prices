@@ -14,5 +14,5 @@
   "baseline_cv_mae": 3246.08291015625,
   "improvement_over_baseline": 690.935546875,
   "n_iter": 30,
-  "search_time_seconds": 208.92116528190672
+  "search_time_seconds": 202.22353109787218
 }
