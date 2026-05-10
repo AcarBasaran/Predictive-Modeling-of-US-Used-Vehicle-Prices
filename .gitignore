@@ -215,6 +215,7 @@ models/.sklearn_cache/
 .claude/
 CLAUDE.md
 CLAUDE.local.md
+PRESENTATION.md
 
 # SLURM logs — keep folder tracked, ignore the contents
 logs/*

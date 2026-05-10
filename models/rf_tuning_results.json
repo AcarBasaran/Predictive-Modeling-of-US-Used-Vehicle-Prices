@@ -83,7 +83,7 @@
         "n_estimators": 230
       },
       "mean_test_mae": 2551.8910995207752,
-      "mean_train_mae": 2179.6490422934744
+      "mean_train_mae": 2179.649042293474
     },
     {
       "rank": 19,
@@ -130,7 +130,7 @@
         "min_samples_split": 10,
         "n_estimators": 269
       },
-      "mean_test_mae": 2645.769764838727,
+      "mean_test_mae": 2645.769764838726,
       "mean_train_mae": 2328.916236036126
     },
     {
@@ -251,7 +251,7 @@
         "n_estimators": 289
       },
       "mean_test_mae": 2715.908375489498,
-      "mean_train_mae": 2461.6364384121694
+      "mean_train_mae": 2461.63643841217
     },
     {
       "rank": 8,
