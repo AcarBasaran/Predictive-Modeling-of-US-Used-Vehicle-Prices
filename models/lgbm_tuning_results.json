@@ -1,0 +1,19 @@
+{
+  "best_params": {
+    "colsample_bytree": 0.7746133323530602,
+    "learning_rate": 0.09324587696810628,
+    "max_depth": 10,
+    "min_child_samples": 5,
+    "n_estimators": 1712,
+    "num_leaves": 211,
+    "reg_alpha": 0.1649742679984546,
+    "reg_lambda": 1.1444682032324747,
+    "subsample": 0.709800031213895
+  },
+  "best_cv_mae": 2247.11666094738,
+  "best_cv_mae_std": 16.349197843641328,
+  "baseline_cv_mae": 3520.9861032621457,
+  "improvement_over_baseline": 1273.8694423147658,
+  "n_iter": 40,
+  "search_time_seconds": 1898.0601357200649
+}
